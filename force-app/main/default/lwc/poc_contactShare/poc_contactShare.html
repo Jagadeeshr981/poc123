@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Shared with Groups" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <template if:true={Grp}>
+                <template for:each={Grp} for:item="grp">
+                    <p key={grp.Id}>{grp.Group.Name}</p>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>
